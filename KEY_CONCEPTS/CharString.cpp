@@ -100,3 +100,49 @@
 //       }
 // return true;
 // };
+
+// // Maximum occurring characters in a string
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
+using namespace std;
+
+// Function to find the maximum occurring characters in a string
+void findMaxOccurringChars(const string& str) {
+    unordered_map<char, int> charCount;
+    int maxCount = 0;
+
+    // Count the occurrences of each character
+    for (char ch : str) {
+        charCount[ch]++;
+        if (charCount[ch] > maxCount) {
+            maxCount = charCount[ch];
+        }
+    }
+
+    // Find all characters that have the maximum count
+    vector<char> maxChars;
+    for (const auto& pair : charCount) {
+        if (pair.second == maxCount) {
+            maxChars.push_back(pair.first);
+        }
+    }
+
+    // Display the results
+    cout << "Maximum occurring characters:\n";
+    for (char ch : maxChars) {
+        cout << ch << " occurs " << maxCount << " times.\n";
+    }
+}
+
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    getline(cin, input);
+
+    findMaxOccurringChars(input);
+
+    return 0;
+}
