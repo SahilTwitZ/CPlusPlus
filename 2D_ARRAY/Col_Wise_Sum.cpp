@@ -1,17 +1,17 @@
-// ROW-WISE SUM
+// COL WISE SUM
 #include <iostream>
 using namespace std;
 
 void printSum(int arr[][4], int row, int col)
 {
-    for (int row = 0; row < 3; row++)
+    for (int col = 0; col < 4; col++)
     {
         int sum = 0;
-        for (int col = 0; col < 4; col++)
+        for (int row = 0; row < 3; row++)
         {
             sum += arr[row][col];
         }
-        cout << "Sum of " << row << " row is " << sum;
+        cout << "Sum of " << col << " col is " << sum;
         cout << endl;
     }
 }
