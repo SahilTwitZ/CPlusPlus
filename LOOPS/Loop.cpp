@@ -1,17 +1,17 @@
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// int main(){
-// int n;
-// cin >> n ;
-// int i = 1;
-// int sum = 0;
-// while(i<=n){
-//     sum = sum+i;
-//     i= i+1;
-// }
-// cout << "Value of sum upto entered n is "<< sum << endl;
-// }
+int main(){
+int n;
+cin >> n ;
+int i = 1;
+int sum = 0;
+while(i<=n){
+    sum = sum+i;
+    i= i+1;
+}
+cout << "Value of sum upto entered n is "<< sum << endl;
+}
 
 
 // #include<iostream>
@@ -581,7 +581,7 @@
 
 //     }
 // }
-//right side wale space ko print nhi krte
+// right side wale space ko print nhi krte
 
 
 // //NOT COMPLETED

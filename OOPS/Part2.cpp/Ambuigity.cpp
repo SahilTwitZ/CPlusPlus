@@ -1,34 +1,34 @@
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class A {
-    public:
+// class A {
+//     public:
 
-    void func() {
-        cout << " I am A" << endl;
-    }
-};
+//     void func() {
+//         cout << " I am A" << endl;
+//     }
+// };
 
-class B {
-    public:
+// class B {
+//     public:
 
-    void func() {
-        cout << " I am B" << endl;
-    }
-};
+//     void func() {
+//         cout << " I am B" << endl;
+//     }
+// };
 
-class C: public A, public B {
+// class C: public A, public B {
 
 
-};
+// };
 
-int main() {
+// int main() {
 
-    C obj;
-    //obj.func();
+//     C obj;
+//     //obj.func();
 
-    obj.A::func() ;
-    obj.B::func();
+//     obj.A::func() ;
+//     obj.B::func();
 
-    return 0;
-}
+//     return 0;
+// }

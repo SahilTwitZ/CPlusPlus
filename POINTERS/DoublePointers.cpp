@@ -33,7 +33,7 @@
 
 //     // *p2 = *p2+1; //ku6 change hoga *p2= *p2+1 se ya nhi hoga -- YES p
 
-//     **p2 = **p2+1;  //ku6 change hoga **p2= **p2+1 se ya nhi hoga --YES i
+    // **p2 = **p2+1;  //ku6 change hoga **p2= **p2+1 se ya nhi hoga --YES i
 // }
 // int main(){
 //     int i = 5;
